@@ -1,0 +1,26 @@
+.item-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    border-bottom: 0.5px solid rgb(201, 198, 198);
+}
+.Item{
+    margin: 1rem;
+}
+
+.name{
+    margin: 0 0 0.25rem 0;
+}
+
+.description{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 10;
+    font-size: 14px;
+}
+
+.price{
+    color: #76950e;
+    font-weight: bold;
+    margin: 0.25rem 0 0 0;
+}

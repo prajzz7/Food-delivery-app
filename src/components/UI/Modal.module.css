@@ -1,0 +1,59 @@
+.modal{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(49, 49, 49, 0.9);
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 25rem;
+    width: 25rem;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: white;
+    animation: slide-down 300ms ease-out forwards;
+}
+
+
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #a0c133; 
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #a0c133; 
+}
+
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
